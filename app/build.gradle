@@ -1,0 +1,51 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.upco.sunshine"
+        minSdkVersion 14
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dataBinding.enabled = true
+}
+
+// Versions number variables are defined in the module build.gradle file
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    // Support
+    //noinspection GradleCompatible
+    implementation "androidx.appcompat:appcompat:$support_version"
+    implementation "androidx.recyclerview:recyclerview:$support_version"
+    implementation "androidx.preference:preference:$support_version"
+    implementation "androidx.constraintlayout:constraintlayout:$constraintlayout_version"
+
+    // Firebase JobDispatcher
+    implementation "com.firebase:firebase-jobdispatcher:$firebase_jobdispatcher_version"
+
+    // Architecture Components
+    implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+    kapt "androidx.lifecycle:lifecycle-compiler:$lifecycle_version"
+    implementation "androidx.room:room-runtime:$room_version"
+    kapt "androidx.room:room-compiler:$room_version"
+
+    // Instrumentation dependencies use androidTestImplementation
+    // (as opposed to testImplementation for local unit tests run in the JVM)
+    androidTestImplementation "junit:junit:$junit_version"
+    androidTestImplementation "androidx.test:runner:$support_test_version"
+    androidTestImplementation "androidx.test:rules:$support_test_version"
+}

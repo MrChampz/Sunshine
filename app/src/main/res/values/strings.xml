@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+ - This file contains all of the strings used throughout Sunshine. They can be accessed      -
+ - through calls to Context#getString. This strings are organized by where they are used in  -
+ - Sunshine.                                                                                 -
+ -                                                                                           -
+ - Throughout this file, you will see <xliff:g> tags. These help any potential translators   -
+ - properly translate your strings and also give developers that are looking at your strings -
+ - and idea of exactly how they are used.                                                    -
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- - - - - - - - - - - - - -
+     - Used throughout Sunshine  -
+     - - - - - - - - - - - - - - -->
+
+    <string name="app_name">Sunshine</string>
+
+    <!-- Title of the DetailActivity -->
+    <string name="title_activity_detail">Detalhes</string>
+
+    <!-- - - - - - - - - - - - - -
+     - Used by SunshineDateUtils -
+     - - - - - - - - - - - - - - -->
+
+    <!-- For labelling today's forecast -->
+    <string name="today">Hoje</string>
+
+    <!-- For labelling tomorrow's forecast -->
+    <string name="tomorrow">Amanhã</string>
+
+    <!-- Date format -->
+    <string name="format_full_friendly_date">
+        <xliff:g id="month">%1$s</xliff:g>, <xliff:g id="day">%2$s</xliff:g>
+    </string>
+
+    <!-- - - - - - - - - - - - - - - -
+     - Used by SunshineWeatherUtils  -
+     - - - - - - - - - - - - - - - - -->
+
+    <string name="wind_label">Vento</string>
+    <string name="pressure_label">Pressão</string>
+    <string name="humidity_label">Umidade</string>
+
+    <!-- Temperature format -->
+    <string name="format_temperature">
+        <xliff:g id="temp">%1.0f</xliff:g>\u00B0
+    </string>
+
+    <!-- Wind in kph format -->
+    <string name="format_wind_kph">
+        <xliff:g id="speed">%1$1.0f</xliff:g> km/h
+        <xliff:g id="direction">%2$s</xliff:g>
+    </string>
+
+    <!-- Wind in mph format -->
+    <string name="format_wind_mph">
+        <xliff:g id="speed">%1$1.0f</xliff:g> mph
+        <xliff:g id="direction">%2$s</xliff:g>
+    </string>
+
+    <!-- Pressure format -->
+    <string name="format_pressure">
+        <xliff:g id="pressure">%1.0f</xliff:g> hPa
+    </string>
+
+    <!-- Humidity format -->
+    <string name="format_humidity">
+        <xliff:g id="humidity">%1.0f</xliff:g> %%
+    </string>
+
+    <!-- Weather Conditions (From OpenWeatherMap) -->
+    <string name="condition_2xx">Tempestade</string>
+    <string name="condition_3xx">Garoa</string>
+    <string name="condition_500">Chuva Fraca</string>
+    <string name="condition_501">Chuva Moderada</string>
+    <string name="condition_502">Chuva Forte</string>
+    <string name="condition_503">Chuva Intensa</string>
+    <string name="condition_504">Chuva Extrema</string>
+    <string name="condition_511">Chuva Congelante</string>
+    <string name="condition_520">Chuva Localizada Fraca</string>
+    <string name="condition_521">Chuva Localizada</string>
+    <string name="condition_522">Chuva Localizada Forte</string>
+    <string name="condition_531">Chuva Localizada Irregular</string>
+    <string name="condition_600">Neve Fraca</string>
+    <string name="condition_601">Neve</string>
+    <string name="condition_602">Neve Forte</string>
+    <string name="condition_611">Chuva com Neve</string>
+    <string name="condition_612">Chuva com Neve Localizada</string>
+    <string name="condition_615">Chuva e Neve</string>
+    <string name="condition_616">Chuva e Neve</string>
+    <string name="condition_620">Chuva de Neve</string>
+    <string name="condition_621">Chuva de Neve</string>
+    <string name="condition_622">Chuva de Neve</string>
+    <string name="condition_701">Nevoeiro</string>
+    <string name="condition_711">Fumaça</string>
+    <string name="condition_721">Neblina</string>
+    <string name="condition_731">Areia, poeira</string>
+    <string name="condition_741">Névoa</string>
+    <string name="condition_751">Areia</string>
+    <string name="condition_761">Poeira</string>
+    <string name="condition_762">Cinza Vulcanica</string>
+    <string name="condition_771">Rajadas</string>
+    <string name="condition_781">Tornado</string>
+    <string name="condition_800">Limpo</string>
+    <string name="condition_801">Maioritariamente Limpo</string>
+    <string name="condition_802">Nuvens Dispersas</string>
+    <string name="condition_803">Nuvens Quebradas</string>
+    <string name="condition_804">Nublado</string>
+    <string name="condition_900">Tornado</string>
+    <string name="condition_901">Tempestade Tropical</string>
+    <string name="condition_902">Furacão</string>
+    <string name="condition_903">Frio</string>
+    <string name="condition_904">Quente</string>
+    <string name="condition_905">Ventoso</string>
+    <string name="condition_906">Granizo</string>
+    <string name="condition_951">Calmo</string>
+    <string name="condition_952">Brisa Fraca</string>
+    <string name="condition_953">Brisa Suave</string>
+    <string name="condition_954">Brisa</string>
+    <string name="condition_955">Brisa Fresca</string>
+    <string name="condition_956">Brisa Forte</string>
+    <string name="condition_957">Vento Forte</string>
+    <string name="condition_958">Ventania</string>
+    <string name="condition_959">Ventania Severa</string>
+    <string name="condition_960">Tempestade</string>
+    <string name="condition_961">Tempestade Violenta</string>
+    <string name="condition_962">Furacão</string>
+
+    <string name="condition_unknown">Desconhecido (<xliff:g id="conditionId">%1$d</xliff:g>)</string>
+
+    <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+     - Used for Accessibility purposes (Accessibility == a11y)                             -
+     -                                                                                     -
+     - Fun Fact: Accessibility is abbreviated a11y because accessibility starts with 'a',  -
+     - followed by 11 letters, and then a 'y'. It is pronounced alley, like an alley cat.  -
+     - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+    <string name="a11y_forecast">Previsão: <xliff:g id="condition">%1$s</xliff:g></string>
+    <string name="a11y_forecast_icon">Ícone da previsão: <xliff:g id="condition">%1$s</xliff:g></string>
+    <string name="a11y_high_temp">Máxima: <xliff:g id="high">%1$s</xliff:g></string>
+    <string name="a11y_low_temp">Mínima: <xliff:g id="low">%1$s</xliff:g></string>
+    <string name="a11y_humidity">Umidade: <xliff:g id="humidity">%1$s</xliff:g></string>
+    <string name="a11y_pressure">Pressão Barométrica: <xliff:g id="pressure">%1$s</xliff:g></string>
+    <string name="a11y_wind">Velocidade e direção do vento: <xliff:g id="wind">%1$s</xliff:g></string>
+
+</resources>
