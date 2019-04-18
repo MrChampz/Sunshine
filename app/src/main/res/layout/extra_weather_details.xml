@@ -30,9 +30,9 @@
             style="@style/DetailLabel"
             android:text="@string/humidity_label"
             app:layout_constraintVertical_bias="0.33"
-            app:layout_constraintTop_toTopOf="@id/extra_details"
-            app:layout_constraintBottom_toBottomOf="@id/extra_details"
-            app:layout_constraintLeft_toLeftOf="@id/extra_details" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/pressure_label"
+            app:layout_constraintLeft_toLeftOf="parent" />
 
         <!-- Humidity measurement -->
         <TextView
@@ -47,9 +47,9 @@
             android:id="@+id/pressure_label"
             style="@style/DetailLabel"
             android:text="@string/pressure_label"
-            app:layout_constraintTop_toBottomOf="@id/humidity_label"
-            app:layout_constraintBottom_toBottomOf="@id/extra_details"
-            app:layout_constraintLeft_toLeftOf="@id/extra_details" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
 
         <!-- Pressure measurement -->
         <TextView
@@ -66,8 +66,8 @@
             android:text="@string/wind_label"
             app:layout_constraintVertical_bias="0.65999997"
             app:layout_constraintTop_toBottomOf="@id/pressure_label"
-            app:layout_constraintBottom_toBottomOf="@id/extra_details"
-            app:layout_constraintLeft_toLeftOf="@id/extra_details" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent" />
 
         <!-- Wind measurement -->
         <TextView
